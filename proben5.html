@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="probenscript5.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<Select name="drop" id="drop">
+    <option value="1">1</option>
+    <option value="2">2</option>
+</select>
+<input type="button" name="test" id="test" value="test">
+
+<script>
+	
+var myarray = new Array();
+$("#test").live("click",function() {
+        myarray.push($("#drop").val());
+        alert(myarray);
+});
+
+</script>
+</body>
+</html>
